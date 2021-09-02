@@ -31,6 +31,8 @@ private slots:
 
     void on_signInPB_clicked();
 
+    void on_createPB_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

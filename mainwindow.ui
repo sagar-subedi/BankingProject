@@ -19,13 +19,72 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>241</width>
+      <width>271</width>
       <height>321</height>
      </rect>
     </property>
     <property name="title">
      <string>Create Account</string>
     </property>
+    <widget class="QLabel" name="nameLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="initialLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Initial Deposit: </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="createPB">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>260</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Create</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="initialLE">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>90</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="nameLE">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
@@ -204,6 +263,12 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuBankng_App">
+    <property name="title">
+     <string>Bankng App</string>
+    </property>
+   </widget>
+   <addaction name="menuBankng_App"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

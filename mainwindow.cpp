@@ -133,3 +133,17 @@ void MainWindow::on_signInPB_clicked()
     }
 
 }
+
+void MainWindow::on_createPB_clicked()
+{
+    db.open();
+    QString qryString1;
+    QSqlQuery qryCreate;
+    qryString1 = "INSERT INTO Accounts(Name, Balance) VALUES"
+                "(?,?) ";
+    qryCreate.prepare(qryString1);
+    qryCreate.addBindValue(ui->nameLE->text());
+    qryCreate.addBindValue(ui->initialLE->text());
+    qryCreate.exec();
+    db.close();
+}

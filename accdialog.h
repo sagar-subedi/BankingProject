@@ -2,6 +2,12 @@
 #define ACCDIALOG_H
 
 #include <QDialog>
+#include <QtSql/QSql>
+#include <QtSql/QSqlDatabase>
+#include <QSqlQuery>
+#include <QString>
+#include <QSqlError>
+#include <QtSql>
 
 namespace Ui {
 class accdialog;
@@ -18,10 +24,12 @@ public:
     QString ownerName;
     QString balance;
     void setText();
-
+    QSqlDatabase db1;
 
 private slots:
     void on_depositPB_clicked();
+
+    void on_withdrawPB_clicked();
 
 private:
     Ui::accdialog *ui;
